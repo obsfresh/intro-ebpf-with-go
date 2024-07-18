@@ -5,9 +5,9 @@ gen:
 	go generate
 
 compile:
-	go build -o hello_ebpf
+	go build -o ./bin/hello_ebpf
 
 clean:
 	- rm ebpf_bpf*.go
 	- rm ebpf_bpf*.o
-	- rm hello_ebpf
+	- rm ./bin/hello_ebpf
