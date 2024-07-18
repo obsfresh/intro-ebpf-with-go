@@ -15,7 +15,7 @@ import (
 	"golang.org/x/sys/unix"
 )
 
-//go:generate go run github.com/cilium/ebpf/cmd/bpf2go -type event ebpf hello_ebpf.c
+//go:generate go run github.com/cilium/ebpf/cmd/bpf2go -target amd64 -type event ebpf hello_ebpf.c
 
 const (
 	kprobeFunc = "sys_execve"
